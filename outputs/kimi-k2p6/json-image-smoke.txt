@@ -1,0 +1,1 @@
+{"standard_no":"GB/T 13594-2025","title_zh":"商用车辆和挂车防抱制动系统性能要求及试验方法","title_en":"Performance requirements and test methods of anti-lock braking system for commercial vehicle and trailer","visible_chapter_titles":[],"page_type":"cover"}

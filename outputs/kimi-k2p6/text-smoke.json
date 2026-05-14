@@ -1,0 +1,17 @@
+{
+  "base_url": "https://api.zhenhaoji.qzz.io/v1",
+  "model": "accounts/fireworks/models/kimi-k2p6",
+  "status": 200,
+  "elapsed_seconds": 2.823,
+  "has_image": false,
+  "usage": {
+    "prompt_tokens": 13,
+    "total_tokens": 77,
+    "completion_tokens": 64,
+    "prompt_tokens_details": {
+      "cached_tokens": 12
+    }
+  },
+  "text": "用户要求只回复两个字：\"成功\"。这是一个非常简单的指令，我需要严格遵守字数限制，只输出这两个字，不能添加任何其他内容（包括标点符号、空格、换行等）。\n\n让我确认一下：\n- 字数：2个字\n- 内容：\"成功\"\n- 不能有多余内容\n\n所以最终",
+  "error": null
+}

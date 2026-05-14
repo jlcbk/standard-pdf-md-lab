@@ -1,0 +1,17 @@
+{
+  "base_url": "https://api.zhenhaoji.qzz.io/v1",
+  "model": "accounts/fireworks/models/kimi-k2p6",
+  "status": 200,
+  "elapsed_seconds": 6.77,
+  "has_image": true,
+  "usage": {
+    "prompt_tokens": 1554,
+    "total_tokens": 2171,
+    "completion_tokens": 617,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "text": "{\"standard_no\":\"GB/T 13594-2025\",\"title_zh\":\"商用车辆和挂车防抱制动系统性能要求及试验方法\",\"title_en\":\"Performance requirements and test methods of anti-lock braking system for commercial vehicle and trailer\",\"visible_chapter_titles\":[],\"page_type\":\"cover\"}",
+  "error": null
+}

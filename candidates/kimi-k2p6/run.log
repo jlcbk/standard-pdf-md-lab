@@ -1,0 +1,27 @@
+2026-05-14 kimi-k2p6 smoke test
+
+Environment variables used at runtime:
+
+- OPENAI_COMPAT_BASE_URL
+- OPENAI_COMPAT_MODEL
+- OPENAI_COMPAT_API_KEY
+
+No API key is recorded in this log.
+
+Commands:
+
+1. Rendered page 1 of samples/GBT 13594-2025.pdf to outputs/kimi-k2p6/page-01.png using PyMuPDF.
+2. Ran scripts/openai_compat_smoke.py for a text-only request.
+3. Ran scripts/openai_compat_smoke.py for a single-image request using outputs/kimi-k2p6/page-01.png.
+4. Ran scripts/openai_compat_smoke.py for a stricter JSON-only single-image request.
+5. Searched the repository for sk-* secrets with rg.
+6. Asked deepseek-v4-pro to draft objective notes; it updated candidates/kimi-k2p6/NOTES.md but did not exit cleanly and was terminated after roughly 90 seconds.
+
+Results:
+
+- text-only request: HTTP 200, 2.823s, 77 total tokens.
+- single-image request: HTTP 200, 7.845s, 2028 total tokens.
+- JSON-only single-image request: HTTP 200, 6.770s, 2171 total tokens.
+- image observation: model recognized GB/T 13594-2025 and the cover title.
+- main issue: ordinary prompts produced reasoning-like text rather than clean structured output.
+- positive follow-up: strict JSON-only prompt returned parseable JSON with the correct standard number and title.

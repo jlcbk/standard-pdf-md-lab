@@ -29,6 +29,12 @@ standard-pdf-md-lab/
 - 总体工作计划见 `WORKPLAN.md`。
 - `gpt-5.5` 与 Claude Code 中 `deepseek-v4-pro` 的任务拆分见 `MODEL_COLLAB_PLAN.md`。
 
+## 当前进展
+
+- 已测试 `pymupdf4llm`、`markitdown`、`docling`、`marker`，结果见 `reviews/round-1-summary.md`。
+- 已完成 `kimi-k2p6` 在线 VLM smoke test，结果见 `reviews/kimi-k2p6-smoke.md`。
+- 下一步优先验证 `kimi-k2p6` 是否能以 JSON-only 或更严格提示方式稳定输出标准页面结构，再决定是否接入 MinerU 或自建 VLM 辅助流程。
+
 ## 评估目标
 
 标准 PDF 的转换结果至少要能支持后续 agent 理解和处理，因此重点看：
