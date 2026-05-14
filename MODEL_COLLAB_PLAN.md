@@ -243,8 +243,10 @@ reviews/final-decision.md
 把下面模板复制给 Claude Code 中的 `deepseek-v4-pro` 使用。建议调用方式：
 
 ```sh
-claude --print --model deepseek-v4-pro --permission-mode dontAsk '<任务内容>'
+claude --print --model deepseek-v4-pro --permission-mode bypassPermissions '<任务内容>'
 ```
+
+注意：首次实测中，`--permission-mode dontAsk` 会自动拒绝 Bash，无法执行安装和转换；`bypassPermissions` 是当前可用的执行方式。另一次 `deepseek-v4-pro` 调用在预算上限内没有完成落盘，因此执行模型任务应设置明确的预算、超时和“必须先创建日志文件”的要求。
 
 ```text
 你在项目目录 /Users/cui/Documents/pytest/standard-pdf-md-lab 工作。

@@ -1,0 +1,39 @@
+Collecting pymupdf4llm
+  Using cached pymupdf4llm-1.27.2.3-py3-none-any.whl.metadata (19 kB)
+Collecting pymupdf==1.27.2.3 (from pymupdf4llm)
+  Using cached pymupdf-1.27.2.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (24 kB)
+Collecting pymupdf_layout==1.27.2.3 (from pymupdf4llm)
+  Using cached pymupdf_layout-1.27.2.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (3.4 kB)
+Collecting tabulate (from pymupdf4llm)
+  Using cached tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
+Collecting pyyaml (from pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting numpy (from pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached numpy-2.4.4-cp314-cp314-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting onnxruntime (from pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached onnxruntime-1.26.0-cp314-cp314-macosx_14_0_arm64.whl.metadata (5.3 kB)
+Collecting networkx (from pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting flatbuffers (from onnxruntime->pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting packaging (from onnxruntime->pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting protobuf (from onnxruntime->pymupdf_layout==1.27.2.3->pymupdf4llm)
+  Using cached protobuf-7.34.1-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Using cached pymupdf4llm-1.27.2.3-py3-none-any.whl (77 kB)
+Using cached pymupdf-1.27.2.3-cp310-abi3-macosx_11_0_arm64.whl (23.3 MB)
+Using cached pymupdf_layout-1.27.2.3-cp310-abi3-macosx_11_0_arm64.whl (15.8 MB)
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Using cached numpy-2.4.4-cp314-cp314-macosx_14_0_arm64.whl (5.2 MB)
+Using cached onnxruntime-1.26.0-cp314-cp314-macosx_14_0_arm64.whl (18.0 MB)
+Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Using cached packaging-26.2-py3-none-any.whl (100 kB)
+Using cached protobuf-7.34.1-cp310-abi3-macosx_10_9_universal2.whl (429 kB)
+Using cached pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl (173 kB)
+Using cached tabulate-0.10.0-py3-none-any.whl (39 kB)
+Installing collected packages: flatbuffers, tabulate, pyyaml, pymupdf, protobuf, packaging, numpy, networkx, onnxruntime, pymupdf_layout, pymupdf4llm
+
+Successfully installed flatbuffers-25.12.19 networkx-3.6.1 numpy-2.4.4 onnxruntime-1.26.0 packaging-26.2 protobuf-7.34.1 pymupdf-1.27.2.3 pymupdf4llm-1.27.2.3 pymupdf_layout-1.27.2.3 pyyaml-6.0.3 tabulate-0.10.0
+
+[notice] A new release of pip is available: 25.3 -> 26.1.1
+[notice] To update, run: pip install --upgrade pip
