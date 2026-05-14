@@ -60,3 +60,14 @@
 - 追加 JSON-only 小测成功返回可解析 JSON，说明严格提示下可以做受控单页结构抽取。
 
 因此，`kimi-k2p6` 可以进入下一步小范围 VLM 实验，但不能直接进入整份 PDF 批量转换。下一步应测试固定页面集 JSON 抽取、schema 校验和成本上限。
+
+## MinerU + kimi-k2p6 Trial Update
+
+`deepseek-v4-pro` 已按任务卡执行 `MinerU v3.1.12 + vlm-http-client + kimi-k2p6` 小样本试跑，见 `reviews/mineru-kimi.md`：
+
+- MinerU 可以连接在线 OpenAI-compatible endpoint，接口返回 HTTP `200`。
+- 未触发本地大模型下载，符合“暂缓本地模型部署”的约束。
+- 试跑限制为 3 页，运行完成但 Markdown、content list、model JSON 产物为空。
+- 根因是 MinerU 的 `vlm-http-client` 需要 MinerU 专用结构化输出 token，例如 `<|box_start|>...<|box_end|><|ref_start|>...<|ref_end|>`；`kimi-k2p6` 输出的是自然语言版面描述，无法被 MinerU 的解析器消费。
+
+因此，当前证据显示：`kimi-k2p6` 可以作为自定义 VLM 页面理解组件继续测试，但不适合作为 MinerU `vlm-http-client` 的直接替换模型。

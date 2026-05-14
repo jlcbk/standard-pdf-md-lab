@@ -1,0 +1,112 @@
+2026-05-14 16:07:36.529 | INFO     | mineru.cli.client:run_orchestrated_cli:877 - Started local mineru-api at http://127.0.0.1:62472
+2026-05-14 16:07:44.686 | INFO     | __main__:create_app:262 - Request concurrency limited to 1
+INFO:     Started server process [18936]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:62472 (Press CTRL+C to quit)
+2026-05-14 16:07:45.677 | INFO     | mineru.cli.client:run_planned_task:773 - Submitting batch 1/1 | 1 document, 3 pages in this batch | 3 pages total | task#1 [GBT 13594-2025]
+2026-05-14 16:07:49.255 | INFO     | mineru.backend.vlm.vlm_analyze:get_model:251 - get http-client predictor cost: 3.45s
+2026-05-14 16:07:49.256 | INFO     | mineru.backend.vlm.vlm_analyze:aio_doc_analyze:546 - VLM processing-window run. page_count=3, window_size=64, total_windows=1
+Start MinerU FastAPI Service: http://127.0.0.1:62472
+API documentation: http://127.0.0.1:62472/docs
+2026-05-14 16:07:52.809 | INFO     | mineru.backend.vlm.vlm_analyze:aio_doc_analyze:565 - VLM processing window 1/1: pages 1-3/3 (3 pages)
+Two Step Extraction:   0%|          | 0/3 [00:00<?, ?it/s]2026-05-14 16:08:02.631 | WARNING  | mineru_vl_utils.mineru_client:parse_layout_output:251 - Layout output does not match expected format: Here is the layout detection analysis for this standard document cover page:
+
+## Document Layout Structure
+
+### **Header Zone**
+- **Top-Left Block**: Classification codes
+  - `ICS 43.040.40`
+  - `CCS T 24`
+- **Top-Right Block**: Standard mark and numbering
+  - GB logo (circular emblem with "GB" letters)
+  - `GB/T 13594—2025`
+  - `代替 GB/T 13594—2003` (supersession note)
+
+### **Title Zone** (Center-Aligned)
+- **Primary Header**: `中华人民共和国国家标准` (People's Republic of China National Standard)
+- **Main Title (Chinese)**: `商用车辆和挂车防抱制动系统性能要求及试验方法`
+- **Main Title (English)**: `Performance requirements and test methods of anti-lock braking system for commercial vehicle and trailer`
+
+### **Footer Zone**
+- **Bottom-Left Block**: `2025-04-25 发布` (Date of issuance)
+- **Bottom-Right Block**: `2025-08-01 实施` (Date of implementation)
+- **Bottom-Center Block**: Issuing authority
+  - `国家市场监督管理总局`
+  - `国家标准化管理委员会`
+  - `发布`
+
+---
+
+## Key Layout Characteristics
+| Feature | Description |
+|---------|-------------|
+| **Orientation** | Portrait, vertical text flow |
+| **Alignment** | Center-aligned for titles; left/right split for dates |
+| **Typography** | Bold serif fonts for titles; sans-serif for metadata |
+| **Language** | Bilingual (Chinese primary, English secondary) |
+| **Standard Type** | GB/T (Recommended National Standard) |
+
+This follows the typical standardized cover page format prescribed for Chinese national standards (GB/T 1.1).
+Two Step Extraction:  33%|███▎      | 1/3 [00:09<00:19,  9.83s/it]2026-05-14 16:08:04.382 | WARNING  | mineru_vl_utils.mineru_client:parse_layout_output:251 - Layout output does not match expected format: Based on the image provided, here is the layout detection analysis:
+
+**Layout Structure:**
+- **Background:** The image is predominantly blank white/empty space (~99% of the area).
+- **Primary Element:** There is a single, small rectangular icon element located in the **upper-left quadrant** (approximately 25-30% from the left edge and 30-35% from the top edge).
+- **Element Type:** The object appears to be a small UI icon or badge—likely a payment method logo (e.g., Visa, Mastercard, or similar card icon) based on its horizontal rectangular proportions and light blue/gray coloring with faint internal detailing.
+- **Content Regions:** No text blocks, navigation bars, sidebars, headers, footers, images, or additional UI components are detectable.
+
+**Summary:** The layout is extremely minimal and sparse, consisting of a single tiny icon isolated on an otherwise completely blank canvas.
+Two Step Extraction:  67%|██████▋   | 2/3 [00:11<00:05,  5.07s/it]2026-05-14 16:08:07.117 | WARNING  | mineru_vl_utils.mineru_client:parse_layout_output:251 - Layout output does not match expected format: **Layout Detection Results:**
+
+| Region | Type | Position | Content Description |
+|--------|------|----------|---------------------|
+| **Header** | Text | Top-right | Standard code "GB/T 13594—2025" |
+| **Title** | Text | Top-center | "目 次" (Table of Contents) |
+| **Body** | Structured List | Main area (left-aligned) | Multi-level directory with chapter numbers, titles, dot leaders, and page numbers |
+| **Footer** | Page Number | Bottom-right | Roman numeral "I" |
+| **Watermark** | Image/Logo | Lower-center | Small light-colored emblem (likely publisher/standardization body mark) |
+
+**Detailed Element Breakdown:**
+
+1. **Header Region** (`GB/T 13594—2025`)
+   - Position: Upper right quadrant
+   - Font: Small, standard serif/sans-serif
+   - Function: Document identification
+
+2. **Title Region** (`目 次`)
+   - Position: Centered horizontally below header
+   - Font: Larger, bold weight
+   - Spacing: Wide letter-spacing between the two characters
+
+3. **Content List** (Primary Body)
+   - Structure: Vertical list with hierarchical indentation
+   - Format: `[Number/Prefix] + [Title] + [Dot Leaders] + [Page Number]`
+   - Entries include:
+     - Preface (前言) → p. III
+     - Sections 1–7 (范围 through 试验规程) → pp. 1–7
+     - Appendices A–D (附录 A–D) with normative/informative labels → pp. 8–13
+     - References (参考文献) → p. 19
+   - Alignment: Left-aligned text block with right-aligned page numbers
+   - Special formatting: Appendices include parenthetical type labels "(规范性)" / "(资料性)"
+
+4. **Footer Region**
+   - Position: Bottom-right corner
+   - Content: "I" (Roman numeral page numbering for front matter)
+
+5. **Background/Watermark**
+   - Position: Center-bottom (below main text block)
+   - Appearance: Faint, light blue/gray graphic element (possibly a cloud or standards body logo)
+
+**Layout Characteristics:**
+- **Margins:** Wide, even margins typical of formal technical standards
+- **Typography:** Monospaced/aligned dot leaders creating visual connection between titles and page numbers
+- **Language:** Simplified Chinese technical document
+- **Standard Structure:** Follows GB (Guobiao) standard formatting conventions with Roman numeral front matter and Arabic numeral body sections
+Two Step Extraction: 100%|██████████| 3/3 [00:14<00:00,  4.01s/it]Two Step Extraction: 100%|██████████| 3/3 [00:14<00:00,  4.77s/it]
+Processing pages:   0%|          | 0/3 [00:00<?, ?it/s]Processing pages:  67%|██████▋   | 2/3 [00:00<00:00, 19.48it/s]Processing pages: 100%|██████████| 3/3 [00:00<00:00, 19.02it/s]
+2026-05-14 16:08:07.940 | INFO     | mineru.cli.client:run_planned_task:809 - Completed batch 1/1 | Processed 3/3 pages | 1 of 1 batch finished | task#1 [GBT 13594-2025]
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18936]

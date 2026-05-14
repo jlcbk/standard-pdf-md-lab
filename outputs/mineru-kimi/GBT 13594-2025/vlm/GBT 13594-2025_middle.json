@@ -1,0 +1,36 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                842
+            ],
+            "page_idx": 0,
+            "para_blocks": []
+        },
+        {
+            "preproc_blocks": [],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                842
+            ],
+            "page_idx": 1,
+            "para_blocks": []
+        },
+        {
+            "preproc_blocks": [],
+            "discarded_blocks": [],
+            "page_size": [
+                595,
+                842
+            ],
+            "page_idx": 2,
+            "para_blocks": []
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "3.1.12"
+}
